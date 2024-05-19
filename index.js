@@ -9,10 +9,14 @@ document.getElementById("submitBtn").addEventListener("click", function(event){
       .then((response) => response.json())
       .then(data => {
           const colorElements = data.colors.map(color => {
-            return `<div class="color-block" style="background-color: ${color.hex.value}"></div>`
+            return `<div class="color-container">
+            <div class="color-block" style="background-color: ${color.hex.value}"></div>
+            <div class="hexText">${color.hex.value}</div>
+            </div>
+            `
       }).join('')
       document.getElementById('themes').innerHTML = colorElements
-    
+      
     })
 
       
