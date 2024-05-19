@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Color Scheme Generator</title>
 </head>
 <body>
-           <h1>index.html</h1>
+        <nav>
+            <input id="seed" type="color">
+            <select id="colorSchemeGenerator" size="1">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button id="submitBtn" type="submit">Get Color Scheme</button>
+        </nav>
+        <div>
+            <div id="themes">
+
+            </div>
+        </div>
+        <footer>
+            <div id="hexCodes"></div>
+        </footer>
         <script src="index.js"></script> 
 </body>
 </html>
